@@ -1,0 +1,100 @@
+header {
+  display: grid;
+  grid-template-columns: 4;
+  height: 40px;
+  max-width: 80%;
+  background-color: $backColor2;
+  margin: auto;
+  margin-top: 20px;
+  padding: 15px;
+  select {
+    background-color: $backColor2;
+  }
+
+  #openInfo{
+    grid-column: 1;
+  }
+  #catswitcher{
+    grid-column: 2;
+    background-color: $backColor2;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  #catswitcher select option, #catswitcher select{
+    background-color: $backColor;
+  }
+  #uploadForm{
+    grid-column: 3;
+    background-color: $backColor2;
+  }
+  #logout-btn{
+    grid-column: 4;
+    height: 40px;
+    background-color: transparent;
+    margin-left: 30px;
+
+  }
+}
+a{
+  text-decoration: none;
+}
+#uploadForm{
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  #fileToUpload{
+    grid-column: 1;
+    grid-row: 1;
+    margin:1px;
+    border: 1.5px $accentColor solid;
+  }
+  #_jmtoken{
+    grid-column: 2;
+    grid-row: 1;
+    margin:1px;
+    border: 1.5px $accentColor solid;
+  }
+  #jmtoken{
+    border:none;
+  }
+  #jmcat{
+    grid-column: 3;
+    grid-row: 1;
+    margin:1px;
+    border: 1.5px $accentColor solid;
+  }
+  #submitUpload{
+    grid-column: 2;
+    grid-row: 2;
+    padding: 4px;
+    margin:1px;
+    border: 1.5px $accentColor solid;
+  }
+  #output{
+    display: none;
+    grid-row: 3;
+  }
+  input::placeholder{
+    color: $ligtherText;
+  }
+}
+#logged-in{
+  color:red;
+  text-align: center;
+  font-size: 80%;
+}
+#jmlogintoken{
+  margin:1px;
+  border: 1.5px $accentColor solid;
+}
+#jmlogintoken::placeholder{
+  color: $ligtherText;
+}
+#btn-login{
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  margin:1px;
+  border: 1.5px $accentColor solid;
+  text-align: center;
+}

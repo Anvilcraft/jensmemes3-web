@@ -1,0 +1,14 @@
+body, *{
+  background-color: $backColor;
+  color: $textColor;
+  font-family: $font;
+}
+
+.images {
+  display: flex;
+  flex-flow: wrap;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  margin-top: 20px;
+}

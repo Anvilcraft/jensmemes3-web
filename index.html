@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jensmemes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<header id="header">
+<!-- Trigger/Open The Modal -->
+<button id="openInfo"></button>
+
+<!-- The Modal -->
+<div id="info" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Jensmemes</h2>
+    </div>
+    <div class="modal-body">
+        <p>
+            Das Token für das Login kannst du im Discord von Jens bzw. in Anvilcraft -Discord über den Befehl !register erhalten. Es wird nach der Eingabe für 30 Tage im Browser gespeichert - dannach muss es neu eingegeben werden. Durch den Logout-Button rechts kann mann es löschen.
+        </p>
+        <b>Erstellt von:</b>
+        <ul>
+            <li><a href="https://data.tilera.xyz/git/JensMemes/jmserver">tilera - API</a></li>
+            <li><a href="https://data.tilera.xyz/git/LordMZTE/jensmemesclient">LordMZTE - CLI CLient</a></li>
+            <li><a href="http://gitlab.a-hoefler.eu/ha/jensmemes">ITbyHF - Website</a></li>
+        </ul>
+    </div>
+  </div>
+
+</div>
+
+<div id="catswitcher">
+    Category:
+    <select id="categorySelect">
+
+    </select>
+</div>
+
+    <div id="uploadForm">
+        <input type="file" id="fileToUpload" name="fileToUpload">
+<span id="_jmtoken">        <input type="text" id="jmtoken" placeholder="JM Token">
+</span>
+        <input type="text" id="jmcat" placeholder="JM Category id">
+        <input type="button" id="submitUpload" onclick="uploadFile()" value="Hochladen">
+        <span id="output"></span>
+    </div>
+
+    <img id="logout-btn" src="https://cdn.a-hoefler.eu/apps/p5mtz51z2c/login.png" onclick="logout()">
+
+    <div class="loginmodal" id="loginmodal">
+        <div class="loginmodal-content">
+            <div class="loginmodal-header">
+            <span class="loginclose">&times;</span>
+            <h2>Login</h2>
+            </div>
+        <div class="loginmodal-body">
+            <i>JensMemes - Token:</i> <input type="text" id="jmlogintoken"><br>
+            <input type="button" onclick="login()" value="Anmelden" id="btn-login">
+        </div>
+    </div>
+
+</header>
+<div class="images">
+
+</div>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/upload.js"></script>
+<script src="js/libs/md5.min.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>
