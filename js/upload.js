@@ -16,7 +16,7 @@ function uploadFile(){
             }
 
             $.ajax({
-                url: 'http://api.tilera.xyz/jensmemes/v1/upload',
+                url: 'https://api.tilera.xyz/jensmemes/v1/upload',
                 type: 'post',
                 data: fd,
                 contentType: false,

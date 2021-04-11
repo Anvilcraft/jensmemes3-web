@@ -3,7 +3,7 @@ if(!getCookie("jmtoken")){
 }else{
     _jmtoken.innerHTML="";
     $.ajax({
-        url: 'http://api.tilera.xyz/jensmemes/v1/users',
+        url: 'https://api.tilera.xyz/jensmemes/v1/users',
         type: 'get',
         contentType: false,
         processData: false,
