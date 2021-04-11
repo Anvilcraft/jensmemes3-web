@@ -5,6 +5,7 @@ let offsetLoadNext = 200;
 let memes;
 let categories = [];
 let categorySelect = document.querySelector("#categorySelect");
+let categorySelectUpload = document.querySelector("#jmcat");
 let imagesDiv = document.querySelector(".images");
 let docElem = document.documentElement;
 let docBody = document.body;
@@ -44,7 +45,11 @@ function addCategory(category){
     let optionItem = document.createElement("option");
     optionItem.setAttribute("value", category["id"]);
     optionItem.innerText = category["name"];
+    let optionItemUpload = document.createElement("option");
+    optionItemUpload.setAttribute("value", category["id"]);
+    optionItemUpload.innerText = category["name"];
     categorySelect.appendChild(optionItem);
+    categorySelectUpload.appendChild(optionItemUpload);
 }
 
 function updateImages(clear = false){
