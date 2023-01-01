@@ -1,6 +1,5 @@
 base_url = "https://jensmem.es"
 title = "JensMemes"
-
 compile_sass = true
 build_search_index = false
 
